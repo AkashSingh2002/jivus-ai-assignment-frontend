@@ -53,7 +53,7 @@ const handleTranscription = async (audioBlob) => {
   try {
     const response = await axios.post("https://api.deepgram.ai/v1/transcribe", formData, {
       headers: {
-        "Authorization": `bf90298d8b1d326742926f15a261d2a34025ae63`, // Replace with your Textgram API key
+        "Authorization": `API_KEY`, // Replace with your Textgram API key
         "Content-Type": "multipart/form-data",
       },
     });
